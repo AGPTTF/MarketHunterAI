@@ -7,35 +7,51 @@
 
 <style>
 body{
-background:#111827;
-color:white;
-font-family:Arial;
-text-align:center;
-margin:0;
-padding:40px;
+    background:#111827;
+    color:white;
+    font-family:Arial, sans-serif;
+    text-align:center;
+    margin:0;
+    padding:40px;
 }
 
 h1{
-font-size:40px;
-margin-bottom:10px;
+    font-size:42px;
+    margin-bottom:10px;
 }
 
 .card{
-background:#1f2937;
-padding:20px;
-margin:20px auto;
-border-radius:15px;
-max-width:500px;
+    background:#1f2937;
+    padding:25px;
+    margin:20px auto;
+    border-radius:15px;
+    max-width:500px;
 }
 
 button{
-padding:15px 25px;
-border:none;
-border-radius:10px;
-background:#2563eb;
-color:white;
-font-size:18px;
-cursor:pointer;
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+ol{
+    text-align:left;
+    display:inline-block;
+    font-size:20px;
+    line-height:1.8;
+}
+
+.footer{
+    margin-top:40px;
+    color:#9ca3af;
 }
 </style>
 
@@ -48,27 +64,23 @@ cursor:pointer;
 <p>AI Market Research System</p>
 
 <div class="card">
-
-<h2>市場調査AI</h2>
-
+<h2>📊 市場調査AI</h2>
 <p>現在開発中</p>
 
-<button>Market Scan</button>
-
+<button onclick="marketScan()">
+Market Scan
+</button>
 </div>
 
 <div class="card">
-
-<h2>収益ランキング</h2>
-
+<h2>💰 収益ランキング</h2>
 <p>Coming Soon...</p>
-
 </div>
-<div class="card">
 
+<div class="card">
 <h2>🔥 今日の市場ランキング</h2>
 
-<ol style="text-align:left;max-width:300px;margin:auto;">
+<ol>
 <li>AIツール</li>
 <li>ゲーム</li>
 <li>副業</li>
@@ -77,11 +89,20 @@ cursor:pointer;
 </ol>
 
 </div>
-  <script>
-function marketScan() {
-    alert("市場調査開始！");
+
+<div class="footer">
+MarketHunter AI v0.2
+</div>
+
+<script>
+function marketScan(){
+
+alert(
+"市場調査開始！\n\nVer0.2ではまだダミーです。\n次回から本物の市場調査機能を作ります。"
+);
+
 }
 </script>
-</body>
 
+</body>
 </html>
